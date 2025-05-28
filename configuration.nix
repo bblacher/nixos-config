@@ -50,7 +50,7 @@
 		# gnome-font-viewer
 		# gnome-logs
 		gnome-maps
-		# gnome-music
+		gnome-music
 		# gnome-system-monitor
 		gnome-weather
 		# loupe
@@ -85,12 +85,17 @@
   	};
 
   	programs = {
+
 		firefox = {
 			enable = true;
 			
 		};
 		thunderbird = {
 			enable = true;
+		};
+		vim = {
+			enable = true;
+			defaultEditor = true;
 		};
 		nano.enable = false;
 	};
@@ -100,10 +105,10 @@
 			syncthing
 			
 			git
-			vim 
 			fastfetch
 
 			papers
+			showtime
 
 			rnote
 			xournalpp
