@@ -163,6 +163,10 @@
 	nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
 	hardware = {
+		bluetooth = {
+			enable = true;
+			powerOnBoot = false;
+		};
 		enableRedistributableFirmware = true;
 		cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 		sensor.iio.enable = true;
